@@ -39,7 +39,7 @@ async def main():
 
     result = await runner.run(
         input="It's 22 degrees Celsius today in Paris. Convert this to Fahrenheit, recommend what I should wear, suggest outdoor activities, and search for current weather conditions in Paris to confirm.",
-        model=["openai/gpt-5"],
+        model=["openai/gpt-5-mini"],
         tools=[celsius_to_fahrenheit, get_clothing_recommendation, plan_activity],
         mcp_servers=["joerup/open-meteo-mcp", "windsor/brave-search-mcp"],
         stream=False
